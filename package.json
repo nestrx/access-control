@@ -1,0 +1,30 @@
+{
+  "name": "@nestrx/access-control",
+  "version": "0.0.1",
+  "description": "Module access control for NestJS framework.",
+  "author": "zinzinday@gmail.com",
+  "repository": "https://github.com/nestrx/access-control.git",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf lib && tsc -p tsconfig.json",
+    "prepublish:npm": "npm run build",
+    "publish:npm": "npm publish --access public",
+    "prepublish:next": "npm run build",
+    "publish:next": "npm publish --access public --tag next"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^6.0.0",
+    "@nestjs/core": "^6.0.0",
+    "rxjs": "^6.4.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs-compat": "^6.4.0",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.4.1",
+    "prettier": "^1.16.4"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^6.0.0",
+    "@nestjs/core": "^6.0.0",
+    "rxjs": "^6.4.0"
+  }
+}
